@@ -10,7 +10,7 @@ Dynamic RLS filters data automatically using a security mapping table that assoc
 
 When a user opens the report, Power BI identifies their account and applies the corresponding filter without requiring separate roles for each user.
 
-<img src="Images/06_Dynamic_RLS.png" width="100%"/>
+<img src="Images/06_RLS_Demo.png.png"/>
 
 ---
 
