@@ -234,13 +234,13 @@ The model was redesigned into an **Enterprise Galaxy Schema**, providing a clean
 
 ### Original OLTP Model
 
-<img src="docs/Images/01_Original_OLTP_Model.png" width="100%"/>
+![](docs/Images/01_Original_OLTP_Model.png.png)
 
 ---
 
 ### Final Enterprise Galaxy Schema
 
-<img src="docs/Images/02_Galaxy_Schema.png" width="100%"/>
+![](docs/Images/02_Galaxy_Schema.png.png)
 
 ---
 
@@ -276,7 +276,7 @@ The semantic model supports cross-functional reporting without requiring direct 
 
 Although the primary focus of this project is **enterprise data modeling**, a lightweight Power BI report was developed to validate relationships, DAX calculations, filter propagation, and security implementation.
 
-<img src="docs/Images/05_Dashboard.png" width="100%"/>
+![](docs/Images/05_Dashboard.png.png)
 
 The report demonstrates:
 
@@ -294,15 +294,15 @@ This project follows industry-standard dimensional modeling techniques commonly 
 
 Implemented concepts include:
 
-- ⭐ Star Schema
-- 🌌 Galaxy Schema
-- 🔗 Shared (Conformed) Dimensions
-- 🗂 Junk Dimension
-- 📅 Role-Playing Dimensions
-- 📊 Factless Fact Tables
-- 📦 Accumulating Snapshot Fact Tables
-- 📏 Grain Definition
-- 🧮 Dedicated Measures Table
+- Star Schema
+- Galaxy Schema
+- Shared (Conformed) Dimensions
+- Junk Dimension
+- Role-Playing Dimensions
+- Factless Fact Tables
+- Accumulating Snapshot Fact Tables
+- Grain Definition
+- Dedicated Measures Table
 
 Each concept is documented in detail with practical implementation examples.
 
@@ -326,7 +326,7 @@ Other Queries
 
 This organization separates raw source tables from transformed analytical tables, making large semantic models significantly easier to maintain.
 
-<img src="docs/Images/03_Query_Groups.png" width="100%"/>
+![](docs/Images/03_Query_Groups.png.png)
 
 📖 **Complete documentation:**
 
@@ -375,7 +375,7 @@ Examples include:
 - Order-to-Pay Days
 - Average Delivery Time
 
-<img src="docs/Images/04_Measures_Table.png" width="100%"/>
+![](docs/Images/04_Measures_Table.png.png)
 
 📖 **Complete measure documentation:**
 
@@ -397,7 +397,7 @@ Example access:
 
 This enables secure, scalable reporting without maintaining multiple datasets.
 
-<img src="docs/Images/06_RLS_Demo.png" width="100%"/>
+![](docs/Images/06_RLS_Demo.png.png)
 
 📖 **Implementation details:**
 
