@@ -16,7 +16,7 @@ The Power Query Editor is organized into the following groups:
 📁 Other Queries
 ```
 
-<img src="Images/03_Query_Groups.png" width="100%"/>
+<img src="Images/03_Query_Groups.png.png"/>
 
 ---
 
