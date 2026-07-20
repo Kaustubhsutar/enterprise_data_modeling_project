@@ -308,7 +308,7 @@ Each concept is documented in detail with practical implementation examples.
 
 📖 **Learn more:**
 
-➡️ **[Data Modeling Principles](Docs/01_Data_Modeling_Principles.md)**
+➡️ **[Data Modeling Principles](docs/01_Data_Modeling_Princliples.md)**
 
 ---
 
@@ -330,7 +330,7 @@ This organization separates raw source tables from transformed analytical tables
 
 📖 **Complete documentation:**
 
-➡️ **[Power Query Organization](Docs/03_Power_Query_Organization.md)**
+➡️ **[Power Query Organization](docs/03_Power_Query_Organization.md)**
 
 ---
 
@@ -350,7 +350,7 @@ Following standardized naming makes semantic models easier to understand, mainta
 
 📖 **Complete naming standards:**
 
-➡️ **[Naming Standards](Docs/04_Naming_Standards.md)**
+➡️ **[Naming Standards](docs/04_Naming_Standards.md)**
 
 ---
 
@@ -379,7 +379,7 @@ Examples include:
 
 📖 **Complete measure documentation:**
 
-➡️ **[Measures Documentation](Docs/05_Measures_Table.md)**
+➡️ **[Measures Documentation](docs/05_Measures_Table.md)**
 
 ---
 
@@ -401,7 +401,7 @@ This enables secure, scalable reporting without maintaining multiple datasets.
 
 📖 **Implementation details:**
 
-➡️ **[Dynamic Row-Level Security](Docs/06_Dynamic_Row_Level_Security.md)**
+➡️ **[Dynamic Row-Level Security](docs/06_Dynamic_Row_Level_Security.md)**
 
 ---
 
@@ -479,7 +479,7 @@ Key validation areas included:
 
 📖 **Complete validation methodology:**
 
-➡️ **[Model Validation](Docs/07_Model_Validation.md)**
+➡️ **[Model Validation](docs/07_Model_Validation.md)**
 
 ---
 
