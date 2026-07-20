@@ -8,7 +8,7 @@ This document outlines the architecture of the Power BI semantic model developed
 
 The semantic model follows a **Galaxy Schema**, where multiple fact tables share common dimensions. This design supports multiple business processes while maintaining consistent business definitions across the model.
 
-<img src="Images/02_Galaxy_Schema.png" width="100%"/>
+<img src="Images/02_Galaxy_Schema.png.png" width="100%"/>
 
 ---
 
