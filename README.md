@@ -46,7 +46,7 @@ This project demonstrates the complete process of converting a messy transaction
 
 ---
 
-# 📖 Executive Summary
+## 📖 Executive Summary
 
 Modern transactional databases (OLTP) are optimized for data entry, not analytical reporting. Their highly normalized structure often results in complex relationships, duplicate data, and poor query performance when used directly in BI tools.
 
@@ -70,7 +70,7 @@ The result is a semantic model that is easier to maintain, improves query perfor
 
 ---
 
-# 🎯 Business Problem
+## 🎯 Business Problem
 
 Transactional databases are designed to efficiently process business operations but are rarely suitable for analytics.
 
@@ -88,7 +88,7 @@ The objective of this project is to redesign the underlying data model into a se
 
 ---
 
-# 🚀 Objectives
+## 🚀 Objectives
 
 This project focuses on designing an enterprise-ready semantic model capable of supporting scalable reporting and cross-functional analytics.
 
@@ -104,7 +104,7 @@ This project focuses on designing an enterprise-ready semantic model capable of 
 
 ---
 
-# 🗂 Source Dataset Overview
+## 🗂 Source Dataset Overview
 
 The project uses a fictional enterprise transactional database containing **23 operational tables** representing multiple business processes.
 
@@ -126,7 +126,7 @@ These operational tables were transformed into a dimensional model suitable for 
 
 ---
 
-# 🛠️ Important Links & Tools
+## 🛠️ Important Links & Tools
 
 The project was built using the following technologies:
 
@@ -138,49 +138,27 @@ The project was built using the following technologies:
 
 ---
 
-# 🏗 Architecture / Workflow
+## 🏗 Architecture / Workflow
 
-```text
-Raw OLTP Database (23 Tables)
-            │
-            ▼
-Power Query (ETL)
-            │
-            ├── Stage Queries
-            ├── Dimension Tables
-            ├── Fact Tables
-            └── Support Tables
-            │
-            ▼
-Enterprise Galaxy Schema
-            │
-            ▼
-Power BI Semantic Model
-            │
-            ├── Relationships
-            ├── Measures
-            ├── Row-Level Security
-            └── Validation
-            │
-            ▼
-Interactive Power BI Reports
-```
+![](docs/Images/07_Data_Model_Architecture.png.png)
+
 ### Complete Documentation
+➡️ **[Data Modeling Principles](docs/02_Data_Model_Architecture.md)**
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```bash
 Enterprise-PowerBI-Data-Modeling/
 │
-├── Dashboard/
+├── dashboard/
 │   └── Enterprise Data Modeling.pbix
 │
-├── Dataset/
+├── dataset/
 │   └── raw_tables.xlsx
 │
-├── Docs/
+├── docs/
 │   ├── Images/
 │   │   ├── 01_Original_OLTP_Model.png
 │   │   ├── 02_Galaxy_Schema.png
@@ -188,6 +166,7 @@ Enterprise-PowerBI-Data-Modeling/
 │   │   ├── 04_Measures_Table.png
 │   │   ├── 05_Dashboard.png
 │   │   └── 06_RLS_Demo.png
+│   │   └── 07_Data_Model_Architecture.png.png
 │   │
 │   ├── Data_Modeling_Principles.md
 │   ├── Data_Model_Architecture.md
@@ -203,7 +182,7 @@ Enterprise-PowerBI-Data-Modeling/
 
 ---
 
-# 📊 Project Phases
+## 📊 Project Phases
 
 The project follows a structured development approach to transform the raw transactional database into a scalable semantic model.
 
@@ -218,7 +197,7 @@ Detailed documentation for each phase is available throughout the repository.
 
 ---
 
-# 🔄 Before vs After
+## 🔄 Before vs After
 
 The original dataset was structured as an **OLTP (Online Transaction Processing)** database optimized for transactional operations. While efficient for day-to-day business processes, this structure was not suitable for analytical reporting.
 
@@ -245,7 +224,7 @@ The model was redesigned into an **Enterprise Galaxy Schema**, providing a clean
 
 ---
 
-# 🏛 Final Semantic Model
+## 🏛 Final Semantic Model
 
 The completed model follows a **Galaxy Schema**, where multiple business processes are represented through independent fact tables connected via shared dimensions.
 
@@ -273,7 +252,7 @@ The semantic model supports cross-functional reporting without requiring direct 
 
 ---
 
-# 📊 Dashboard Preview
+## Dashboard Preview
 
 Although the primary focus of this project is **enterprise data modeling**, a lightweight Power BI report was developed to validate relationships, DAX calculations, filter propagation, and security implementation.
 
@@ -289,7 +268,7 @@ The report demonstrates:
 
 ---
 
-# 📐 Data Modeling Principles
+## 📐 Data Modeling Principles
 
 This project follows industry-standard dimensional modeling techniques commonly used in enterprise data warehouses and modern Business Intelligence solutions.
 
@@ -307,13 +286,13 @@ Implemented concepts include:
 
 Each concept is documented in detail with practical implementation examples.
 
-📖 **Learn more:**
+### Complete Documentation:
 
 ➡️ **[Data Modeling Principles](docs/01_Data_Modeling_Princliples.md)**
 
 ---
 
-# ⚙️ Power Query Organization
+## ⚙️ Power Query Organization
 
 To improve maintainability and collaboration, Power Query was organized into logical folders instead of a flat query list.
 
@@ -329,13 +308,13 @@ This organization separates raw source tables from transformed analytical tables
 
 ![](docs/Images/03_Query_Groups.png.png)
 
-📖 **Complete documentation:**
+### Complete documentation:
 
 ➡️ **[Power Query Organization](docs/03_Power_Query_Organization.md)**
 
 ---
 
-# 📝 Naming Standards
+## 📝 Naming Standards
 
 A consistent naming convention improves readability, collaboration, and long-term maintainability across enterprise BI projects.
 
@@ -349,17 +328,17 @@ The project follows conventions such as:
 
 Following standardized naming makes semantic models easier to understand, maintain, and extend.
 
-📖 **Complete naming standards:**
+### Complete naming standards:
 
 ➡️ **[Naming Standards](docs/04_Naming_Standards.md)**
 
 ---
 
-# 📦 Measures Table
+## 🧮 Measures Table
 
 Rather than scattering measures across multiple tables, all DAX calculations are centralized within a dedicated **Measures** table.
 
-This provides:
+**This provides:**
 
 - Single source of truth for business calculations
 - Improved discoverability
@@ -367,7 +346,7 @@ This provides:
 - Easier maintenance
 - Cleaner field list for report developers
 
-Examples include:
+**Examples include:**
 
 - Total Orders
 - Total Customers
@@ -378,13 +357,13 @@ Examples include:
 
 ![](docs/Images/04_Measures_Table.png.png)
 
-📖 **Complete measure documentation:**
+### Complete measure documentation:
 
 ➡️ **[Measures Documentation](docs/05_Measures_Table.md)**
 
 ---
 
-# 🔒 Dynamic Row-Level Security (RLS)
+## 🔒 Dynamic Row-Level Security (RLS)
 
 Role-Level Security was implemented to ensure users only access data relevant to their assigned region.
 
@@ -400,13 +379,13 @@ This enables secure, scalable reporting without maintaining multiple datasets.
 
 ![](docs/Images/06_RLS_Demo.png.png)
 
-📖 **Implementation details:**
+### Implementation details:
 
 ➡️ **[Dynamic Row-Level Security](docs/06_Dynamic_Row_Level_Security.md)**
 
 ---
 
-# 💼 Business Value Delivered
+## Business Value Delivered
 
 Transforming the transactional database into a semantic model provides several business benefits.
 
@@ -445,7 +424,7 @@ The resulting semantic model is suitable for enterprise reporting, self-service 
 
 ---
 
-# 🧹 Data Cleaning & Transformation
+## 🧹 Data Cleaning & Transformation
 
 Extensive data preparation was performed in Power Query to ensure the final semantic model was accurate, consistent, and optimized for analytics.
 
@@ -465,7 +444,7 @@ The transformation process included:
 
 ---
 
-# ✅ Model Validation
+## ✅ Model Validation
 
 Ensuring data accuracy and model reliability was an integral part of the development process. Validation was performed throughout the project to verify data integrity, relationship behavior, DAX calculations, and Dynamic Row-Level Security.
 
@@ -478,13 +457,13 @@ Key validation areas included:
 - Dynamic Row-Level Security (RLS) testing
 - End-to-end report validation
 
-📖 **Complete validation methodology:**
+### Complete validation methodology:
 
 ➡️ **[Model Validation](docs/07_Model_Validation.md)**
 
 ---
 
-# 🛠 Skills Demonstrated
+## 🛠 Skills Demonstrated
 
 This project showcases practical Business Intelligence and data modeling skills commonly required for Power BI Developer, BI Engineer, Analytics Engineer, and Data Analyst roles.
 
@@ -527,7 +506,7 @@ This project showcases practical Business Intelligence and data modeling skills 
 
 ---
 
-# 📚 Key Learnings
+## 📚 Key Learnings
 
 This project strengthened my understanding of enterprise semantic modeling and dimensional design beyond dashboard development.
 
@@ -545,7 +524,7 @@ Key takeaways include:
 
 ---
 
-# 🚀 Future Improvements
+## 🚀 Future Improvements
 
 Potential enhancements for this project include:
 
