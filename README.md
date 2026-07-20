@@ -308,7 +308,7 @@ Each concept is documented in detail with practical implementation examples.
 
 📖 **Learn more:**
 
-➡️ **[Data Modeling Principles](Docs/Data_Modeling_Principles.md)**
+➡️ **[Data Modeling Principles](Docs/01_Data_Modeling_Principles.md)**
 
 ---
 
@@ -330,7 +330,7 @@ This organization separates raw source tables from transformed analytical tables
 
 📖 **Complete documentation:**
 
-➡️ **[Power Query Organization](Docs/Power_Query_Organization.md)**
+➡️ **[Power Query Organization](Docs/03_Power_Query_Organization.md)**
 
 ---
 
@@ -350,7 +350,7 @@ Following standardized naming makes semantic models easier to understand, mainta
 
 📖 **Complete naming standards:**
 
-➡️ **[Naming Standards](Docs/Naming_Standards.md)**
+➡️ **[Naming Standards](Docs/04_Naming_Standards.md)**
 
 ---
 
@@ -370,23 +370,20 @@ Examples include:
 
 - Total Orders
 - Total Customers
-- Active Products
+- Active Customers
 - Total Inventory
 - Order-to-Pay Days
 - Average Delivery Time
-- Inventory Value
-- Sales vs Target
-- Campaign ROI
 
 <img src="Docs/Images/04_Measures_Table.png" width="100%"/>
 
 📖 **Complete measure documentation:**
 
-➡️ **[Measures Documentation](Docs/Measures.md)**
+➡️ **[Measures Documentation](Docs/05_Measures_Table.md)**
 
 ---
 
-# 🔒 Row-Level Security (RLS)
+# 🔒 Dynamic Row-Level Security (RLS)
 
 Role-Level Security was implemented to ensure users only access data relevant to their assigned region.
 
@@ -404,7 +401,7 @@ This enables secure, scalable reporting without maintaining multiple datasets.
 
 📖 **Implementation details:**
 
-➡️ **[Row-Level Security](Docs/Row_Level_Security.md)**
+➡️ **[Dynamic Row-Level Security](Docs/06_Dynamic_Row_Level_Security.md)**
 
 ---
 
@@ -469,20 +466,20 @@ The transformation process included:
 
 # ✅ Model Validation
 
-Maintaining data integrity was a critical part of the modeling process.
+Ensuring data accuracy and model reliability was an integral part of the development process. Validation was performed throughout the project to verify data integrity, relationship behavior, DAX calculations, and Dynamic Row-Level Security.
 
-Validation activities included:
+Key validation areas included:
 
-- Verified row counts after each transformation
-- Compared source totals with transformed totals
-- Validated relationship cardinality
-- Confirmed filter propagation across dimensions
-- Tested DAX measures against expected results
-- Validated Row-Level Security behavior
-- Ensured every fact table had a clearly defined grain
-- Confirmed there were no direct fact-to-fact relationships
+- Row count and data reconciliation
+- Relationship and filter propagation
+- Fact table grain verification
+- DAX measure validation
+- Dynamic Row-Level Security (RLS) testing
+- End-to-end report validation
 
-This iterative validation process ensured that every transformation preserved business accuracy while improving analytical performance.
+📖 **Complete validation methodology:**
+
+➡️ **[Model Validation](Docs/07_Model_Validation.md)**
 
 ---
 
